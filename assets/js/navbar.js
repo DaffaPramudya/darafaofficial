@@ -19,7 +19,7 @@ function initNavbarIndicator() {
   const current = normalizePath(pathname);
   let activeLink;
 
-  links.forEach(link => {
+  links.forEach((link) => {
     const url = new URL(link.getAttribute("href"), window.location.origin);
     const linkPath = normalizePath(url.pathname);
 
@@ -38,39 +38,54 @@ function initNavbarIndicator() {
 
   if (!activeLink) activeLink = links[0];
 
-  links.forEach(l => l.classList.remove("active"));
+  links.forEach(link => link.classList.remove("active"));
   activeLink.classList.add("active");
 
   function moveIndicator(link) {
-    const rect = link.getBoundingClientRect();
-    const parentRect = link.closest("ul").getBoundingClientRect();
-    indicator.style.width = rect.width + "px";
-    indicator.style.left = (rect.left - parentRect.left) + "px";
+    const rectangle = link.getBoundingClientRect();
+    const parentRectangle = link.closest("ul").getBoundingClientRect();
+    indicator.style.width = rectangle.width + "px";
+    indicator.style.left = rectangle.left - parentRectangle.left + "px";
   }
 
   moveIndicator(activeLink);
 
   // klik
-  links.forEach(link => link.addEventListener("click", () => {
-    links.forEach(l => l.classList.remove("active"));
-    link.classList.add("active");
-    moveIndicator(link);
-  }));
+  links.forEach((link) =>
+    link.addEventListener("click", () => {
+      links.forEach((l) => l.classList.remove("active"));
+      link.classList.add("active");
+      moveIndicator(link);
+    })
+  );
 
   // resize
   window.addEventListener("resize", () => {
     const active = document.querySelector("#navMenu .nav-link.active");
     if (active) moveIndicator(active);
   });
+
+  if (typeof updateNavIndicatorOnScroll === "function") {
+    updateNavIndicatorOnScroll();
+
+    // Also attach scroll listener
+    let scrollTimeout;
+    window.addEventListener("scroll", () => {
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(() => {
+        updateNavIndicatorOnScroll();
+      }, 10);
+    });
+  }
 }
 
 function loadNavbar() {
   fetch("../partials/navbar.html")
-    .then(res => {
+    .then((res) => {
       if (!res.ok) throw new Error("Failed to fetch navbar: " + res.status);
       return res.text();
     })
-    .then(html => {
+    .then((html) => {
       const container = document.getElementById("navbar-container");
       if (!container) {
         console.error("No #navbar-container found in this page.");
@@ -78,7 +93,9 @@ function loadNavbar() {
       }
       container.innerHTML = html;
       // run after injection
-      initNavbarIndicator();
+      setTimeout(() => {
+        initNavbarIndicator();
+      }, 50)
     })
-    .catch(err => console.error(err));
+    .catch((err) => console.error(err));
 }
