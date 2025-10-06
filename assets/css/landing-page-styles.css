@@ -29,21 +29,21 @@ a:focus {
   width: 400px;
   height: 566px;
   object-fit: cover; /* atau 'contain' sesuai kebutuhan */
-  margin: 0 auto;     /* supaya gambar tetap center */
+  margin: 0 auto; /* supaya gambar tetap center */
 }
 
 /* Untuk layar mobile */
 @media (max-width: 767.98px) {
   .carousel-inner img {
-    width: 250px;      /* perkecil lebar untuk mobile */
-    height: 350px;     /* perkecil tinggi untuk mobile */
+    width: 250px; /* perkecil lebar untuk mobile */
+    height: 350px; /* perkecil tinggi untuk mobile */
     object-fit: cover; /* tetap menjaga proporsi */
   }
 }
 
 .carousel-indicators {
-  top: 10px;      /* posisi dari atas */
-  bottom: auto;   /* hapus posisi bawah */
+  top: 10px; /* posisi dari atas */
+  bottom: auto; /* hapus posisi bawah */
 }
 
 /* Navigation Styling */
@@ -78,6 +78,98 @@ a:focus {
 .clean-navbar .nav-link:hover::after,
 .clean-navbar .nav-link.active::after {
   width: 80%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  opacity: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-control-prev {
+  left: 20px;
+}
+
+.carousel-control-next {
+  right: 20px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: var(--primary-color);
+  transform: translateY(-50%) scale(1.1);
+  -webkit-transform: translateY(-50%) scale(1.1);
+  -moz-transform: translateY(-50%) scale(1.1);
+  -ms-transform: translateY(-50%) scale(1.1);
+  -o-transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+}
+
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+  opacity: 1;
+  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.3);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 20px;
+  height: 20px;
+  background-size: 100%;
+  filter: invert(1);
+  -webkit-filter: invert(1);
+  transition: filter 0.3s ease;
+  -webkit-transition: filter 0.3s ease;
+  -moz-transition: filter 0.3s ease;
+  -ms-transition: filter 0.3s ease;
+  -o-transition: filter 0.3s ease;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+  filter: invert(0);
+}
+
+/* Responsive sizing for mobile */
+@media (max-width: 767.98px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 40px;
+    height: 40px;
+  }
+
+  .carousel-control-prev {
+    left: 10px;
+  }
+
+  .carousel-control-next {
+    right: 10px;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 16px;
+    height: 16px;
+  }
 }
 
 /* Hero Section */
@@ -137,16 +229,16 @@ a:focus {
 
 @media (max-width: 768px) {
   .hero-content p {
-    font-size: 0.9rem;        /* lebih kecil di layar mobile */
-    margin-bottom: 1.5rem;  /* sedikit lebih rapat */
+    font-size: 0.9rem; /* lebih kecil di layar mobile */
+    margin-bottom: 1.5rem; /* sedikit lebih rapat */
   }
 }
 
 .hero-buttons {
   display: flex;
   justify-content: center; /* rata tengah horizontal */
-  gap: 15px;               /* jarak antar tombol */
-  flex-wrap: wrap;         /* biar tidak overflow di layar kecil */
+  gap: 15px; /* jarak antar tombol */
+  flex-wrap: wrap; /* biar tidak overflow di layar kecil */
 }
 
 .hero-buttons .btn {
@@ -163,10 +255,10 @@ a:focus {
 /* Khusus untuk mobile (layar < 768px) */
 @media (max-width: 767.98px) {
   .hero-buttons .btn {
-    padding: 5px 15px;     /* lebih kecil agar pas di layar kecil */
-    font-size: 0.8rem;      /* sedikit lebih kecil */
-    margin: 6px;            /* lebih rapat */
-    border-radius: 40px;    /* bisa tetap bulat tapi sedikit kecil */
+    padding: 5px 15px; /* lebih kecil agar pas di layar kecil */
+    font-size: 0.8rem; /* sedikit lebih kecil */
+    margin: 6px; /* lebih rapat */
+    border-radius: 40px; /* bisa tetap bulat tapi sedikit kecil */
   }
 }
 
@@ -433,6 +525,19 @@ a:focus {
   color: var(--secondary-color);
 }
 
+div.contact-card strong {
+  text-decoration: none;
+  transition: color 0.3s ease;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+}
+
+div.contact-card strong:hover {
+  color: var(--secondary-color);
+}
+
 /* Features Section */
 .features-section {
   padding: 100px 0;
@@ -501,6 +606,40 @@ a:focus {
 .footer-social a:hover {
   background: var(--primary-color);
   transform: translateY(-3px);
+}
+
+div.footer-div ul li a {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+}
+
+div.footer-div ul li a:visited {
+  color: white !important;
+}
+
+div.footer-div ul li a:hover {
+  color: var(--secondary-color) !important;
+}
+
+.page-footer ul li a {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.page-footer ul li a:visited {
+  color: white;
+}
+
+.page-footer ul li a:hover {
+  color: var(--secondary-color) !important;
 }
 
 /* Responsive */

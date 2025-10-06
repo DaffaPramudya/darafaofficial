@@ -65,11 +65,13 @@
                         <!-- Controls -->
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
                             data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
                         </button>
                         <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
                             data-bs-slide="next">
-                            <span class="carousel-control-next-icon"></span>
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
                         </button>
                     </div>
                 </div>
@@ -133,7 +135,7 @@
             </div>
 
             <!-- Rice Box Category -->
-            <div class="mb-5" data-aos="fade-up">
+            <div class="mb-5 rice-box-section" id="rice-box-section" data-aos="fade-up">
                 <div class="text-center">
                     <span class="category-badge">
                         <i class="fas fa-bowl-rice me-2"></i>
@@ -207,7 +209,7 @@
                 </div>
             </div>
             <!-- Frozen Foods Category -->
-            <div data-aos="fade-up">
+            <div class="frozen-foods-section" id="frozen-foods-section" data-aos="fade-up">
                 <div class="text-center">
                     <span class="category-badge">
                         <i class="fas fa-snowflake me-2"></i>
@@ -217,7 +219,7 @@
 
                 <div class="row mt-4">
                     <!-- Bakso Tahu -->
-                    <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-lg-6 mb-4" id="bakso-tahu-section" data-aos="fade-up" data-aos-delay="100">
                         <div class="menu-card">
                             <div class="menu-card-img">
                                 <i class="fas fa-cookie-bite"></i>
@@ -235,7 +237,7 @@
                                     </span>
                                     <span class="quality-badge">
                                         <i class="fas fa-thumbs-up"></i>
-                                        Teruji Kualitas
+                                        Kualitas Teruji
                                     </span>
                                 </div>
 
@@ -250,7 +252,7 @@
                     </div>
 
                     <!-- Bakso Ayam -->
-                    <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-lg-6 mb-4" id="bakso-ayam-section" data-aos="fade-up" data-aos-delay="200">
                         <div class="menu-card">
                             <div class="menu-card-img" style="background: linear-gradient(135deg, #4ecdc4, #44a08d)">
                                 <i class="fas fa-drumstick-bite"></i>
@@ -268,7 +270,7 @@
                                     </span>
                                     <span class="quality-badge">
                                         <i class="fas fa-thumbs-up"></i>
-                                        Teruji Kualitas
+                                        Kualitas Teruji
                                     </span>
                                 </div>
 
@@ -342,7 +344,7 @@
                             <i class="fab fa-whatsapp"></i>
                             <h4>WhatsApp</h4>
                             <p>Pesan langsung via WhatsApp</p>
-                            <strong>+6287868521570</strong>
+                            <strong>0878-6852-1570</strong>
                         </div>
                     </a>
                 </div>
@@ -353,7 +355,7 @@
                             <i class="fab fa-instagram"></i>
                             <h4>Instagram</h4>
                             <p>Follow kami di Instagram</p>
-                            @darafafoods
+                            <strong>@darafafoods</strong>
                         </div>
                     </a>
                 </div>
@@ -364,7 +366,7 @@
                             <i class="fab fa-tiktok"></i>
                             <h4>TikTok</h4>
                             <p>Lihat postingan video kami di TikTok</p>
-                            @darafafoods
+                            <strong>@darafafoods</strong>
                         </div>
                     </a>
                 </div>
@@ -375,7 +377,7 @@
                             <i class="fas fa-envelope"></i>
                             <h4>Email</h4>
                             <p>Kirim email kepada kami</p>
-                            darafafoods@gmail.com
+                            <strong>darafafoods@gmail.com</strong>
                         </div>
                     </a>
                 </div>
@@ -391,12 +393,12 @@
                         DARAFA Foods
                     </h5>
                     <p style="color: rgb(255, 255, 255); text-align: justify">
-                        Menyediakan Rice Box Nasi Goreng dan Frozen Foods (Makanan Frozen)
+                        Menyediakan Rice Box Nasi Goreng (Fried Rice Rice Box) dan Frozen Foods (Makanan Frozen)
                         yang berkualitas premium dengan harga yang terjangkau dan ramah di
-                        kantong.
+                        kantong masyarakat.
                     </p>
                 </div>
-                <div class="col-lg-2 col-md-6 mb-4">
+                <div class="footer-div col-lg-2 col-md-6 mb-4">
                     <h5 style="
                 font-weight: 700;
                 margin-bottom: 1.5rem;
@@ -406,21 +408,21 @@
                     </h5>
                     <ul style="list-style: none; padding: 0">
                         <li style="margin-bottom: 0.8rem">
-                            <a href="#home" style="color: rgb(255, 255, 255); text-decoration: none">Beranda</a>
+                            <a href="#home" style="">Beranda</a>
                         </li>
                         <li style="margin-bottom: 0.8rem">
-                            <a href="#menu" style="color: rgb(255, 255, 255); text-decoration: none">Menu Kami</a>
+                            <a href="#menu" style="">Menu Kami</a>
                         </li>
                         <li style="margin-bottom: 0.8rem">
-                            <a href="#features" style="color: rgb(255, 255, 255); text-decoration: none">Keunggulan</a>
+                            <a href="#features" style="">Keunggulan</a>
                         </li>
                         <li style="margin-bottom: 0.8rem">
                             <a href="/pages/about-us.html"
-                                style="color: rgb(255, 255, 255); text-decoration: none">Tentang Kami</a>
+                                style="">Tentang Kami</a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="footer-div col-lg-3 col-md-6 mb-4">
                     <h5 style="
                 font-weight: 700;
                 margin-bottom: 1.5rem;
@@ -430,15 +432,15 @@
                     </h5>
                     <ul style="list-style: none; padding: 0">
                         <li style="margin-bottom: 0.8rem">
-                            <a href="#menu" style="color: rgb(255, 255, 255); text-decoration: none">Rice Box Nasi
+                            <a href="#rice-box-section" style="">Rice Box Nasi
                                 Goreng</a>
                         </li>
                         <li style="margin-bottom: 0.8rem">
-                            <a href="#menu" style="color: rgb(255, 255, 255); text-decoration: none">Bakso Tahu
+                            <a href="#frozen-foods-section" style="">Bakso Tahu
                                 Frozen</a>
                         </li>
                         <li style="margin-bottom: 0.8rem">
-                            <a href="#menu" style="color: rgb(255, 255, 255); text-decoration: none">Bakso Ayam
+                            <a href="#frozen-foods-section" style="">Bakso Ayam
                                 Frozen</a>
                         </li>
                     </ul>
