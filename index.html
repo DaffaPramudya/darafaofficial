@@ -1,644 +1,474 @@
 <!DOCTYPE html>
 <html data-bs-theme="light" lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
     <title>DARAFA - Foods and Laptop Care</title>
-    <meta
-      name="description"
-      content="DARAFA Official Website - Premium Rice Box, Frozen Foods, and Professional Laptop Care Services"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/img/icons/darafa%2032x32%20transparent.png"
-    />
+    <meta name="description"
+        content="DARAFA Official Website - Premium Rice Box, Frozen Foods, and Professional Laptop Care Services" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/icons/darafa%2032x32%20transparent.png" />
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i&amp;display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-    />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i&amp;display=swap" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" />
     <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="assets/css/aos.min.css" />
     <link rel="stylesheet" href="assets/css/baguetteBox.min.css" />
     <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css" />
     <link rel="stylesheet" href="assets/css/landing-page-styles.css" />
-  </head>
-  <body>
-    <!-- Navigation -->
-    <nav
-      class="navbar navbar-expand-lg fixed-top bg-body clean-navbar navbar-light"
-    >
-      <div class="container">
-        <a href="index.html" class="navbar-brand d-flex align-items-center">
-          <img
-            src="assets/img/logo/logo%20DARAFA%20transparent%20crop.png"
-            width="60"
-            height="68"
-            alt="DARAFA Logo"
-          />
-        </a>
-        <button
-          data-bs-toggle="collapse"
-          class="navbar-toggler"
-          data-bs-target="#navcol-1"
-        >
-          <span class="visually-hidden">Toggle navigation</span>
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navcol-1">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="#home">BERANDA</a>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#menu">MENU</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="#features">KEUNGGULAN</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">KONTAK</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="gallery.html">GALERI</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about-us.html">TENTANG KAMI</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+</head>
+
+<body>
+    <div id="navbar-container"></div>
+    <script src="assets\js\navbar.js "></script>
+    <script>
+        // panggil fungsi untuk load navbar
+        document.addEventListener("DOMContentLoaded", () => {
+            loadNavbar();
+        });
+    </script>
 
     <!-- Hero Section -->
     <section id="home" class="hero-section">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
-            <div class="hero-content">
-              <h1>DARAFA FOODS</h1>
-              <p>
-                Nikmati kelezatan Rice Box Nasi Goreng dengan berbagai pilihan
-                topping dan juga aneka ragam Frozen Foods berkualitas premium yang awet dan tahan
-                lama!
-              </p>
-              <div class="hero-buttons">
-                <a href="#menu" class="btn btn-primary-custom">Lihat Menu</a>
-                <a href="#contact" class="btn btn-outline-custom"
-                  >Hubungi Kami</a
-                >
-              </div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="hero-content">
+                        <h1>DARAFA FOODS</h1>
+                        <p>
+                            Nikmati kelezatan Rice Box Nasi Goreng dengan berbagai pilihan
+                            topping dan juga aneka ragam Frozen Foods berkualitas premium yang awet dan tahan
+                            lama!
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#menu" class="btn btn-primary-custom">Lihat Menu</a>
+                            <a href="#contact" class="btn btn-outline-custom">Hubungi Kami</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="hero-image text-center">
+                        <i class="fas fa-utensils" style="font-size: 15rem; color: rgba(255, 255, 255, 0.2)"></i>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
-            <div class="hero-image text-center">
-              <i
-                class="fas fa-utensils"
-                style="font-size: 15rem; color: rgba(255, 255, 255, 0.2)"
-              ></i>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <!-- Features Section -->
     <section id="features" class="features-section">
-      <div class="container">
-        <div class="section-heading" data-aos="fade-up">
-          <h2>Mengapa Pilih DARAFA?</h2>
-          <p>
-            Kami berkomitmen memberikan produk berkualitas terbaik dengan harga
-            terjangkau
-          </p>
+        <div class="container">
+            <div class="section-heading" data-aos="fade-up">
+                <h2>Mengapa Pilih DARAFA?</h2>
+                <p>
+                    Kami berkomitmen memberikan produk berkualitas terbaik dengan harga
+                    terjangkau
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>Kualitas Premium</h4>
+                        <p>
+                            Semua bahan baku dipilih dengan teliti untuk menghasilkan cita
+                            rasa terbaik
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Higienis & Aman</h4>
+                        <p>
+                            Diolah dengan standar kebersihan tinggi dan kemasan food-grade
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-tags"></i>
+                        </div>
+                        <h4>Harga Terjangkau</h4>
+                        <p>Harga bersahabat tanpa mengurangi kualitas produk kami</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row">
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="feature-box">
-              <div class="feature-icon">
-                <i class="fas fa-star"></i>
-              </div>
-              <h4>Kualitas Premium</h4>
-              <p>
-                Semua bahan baku dipilih dengan teliti untuk menghasilkan cita
-                rasa terbaik
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="feature-box">
-              <div class="feature-icon">
-                <i class="fas fa-shield-alt"></i>
-              </div>
-              <h4>Higienis & Aman</h4>
-              <p>
-                Diolah dengan standar kebersihan tinggi dan kemasan food-grade
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="feature-box">
-              <div class="feature-icon">
-                <i class="fas fa-tags"></i>
-              </div>
-              <h4>Harga Terjangkau</h4>
-              <p>Harga bersahabat tanpa mengurangi kualitas produk kami</p>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
     <!-- Menu Section -->
     <section id="menu" class="menu-section">
-      <div class="container">
-        <div class="section-heading" data-aos="fade-up">
-          <h2>Menu Kami</h2>
-          <p>Pilihan menu lezat yang siap memanjakan lidah Anda</p>
-        </div>
+        <div class="container">
+            <div class="section-heading" data-aos="fade-up">
+                <h2>Menu Kami</h2>
+                <p>Pilihan menu lezat yang siap memanjakan lidah Anda</p>
+            </div>
 
-        <!-- Rice Box Category -->
-        <div class="mb-5" data-aos="fade-up">
-          <div class="text-center">
-            <span class="category-badge">
-              <i class="fas fa-bowl-rice me-2"></i>
-              Rice Box (Nasi Box)
-            </span>
-          </div>
-          <div class="row mt-4">
-            <div class="col-lg-12">
-              <div class="menu-card mb-0">
-                <div class="row g-0">
-                  <div class="col-md-5">
-                    <div class="menu-card-img h-100">
-                      <i class="fas fa-bowl-food"></i>
+            <!-- Rice Box Category -->
+            <div class="mb-5" data-aos="fade-up">
+                <div class="text-center">
+                    <span class="category-badge">
+                        <i class="fas fa-bowl-rice me-2"></i>
+                        Rice Box (Nasi Box)
+                    </span>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-lg-12">
+                        <div class="menu-card mb-0">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <div class="menu-card-img h-100">
+                                        <i class="fas fa-bowl-food"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="menu-card-body">
+                                        <h3 class="menu-card-title">Rice Box Nasi Goreng</h3>
+                                        <p class="menu-card-desc">
+                                            Nasi goreng spesial dengan bumbu pilihan yang gurih dan
+                                            lezat. Tersedia dalam porsi nasi box yang praktis dan
+                                            mengenyangkan!
+                                        </p>
+                                        <div class="topping-list">
+                                            <h6>
+                                                <i class="fas fa-utensils me-2"></i>Pilih Topping
+                                                Favorit Anda:
+                                            </h6>
+                                            <div class="topping-item">
+                                                <i class="fas fa-check-circle"></i>
+                                                <span><strong>Telur Dadar Suwir</strong> - Telur dadar
+                                                    lembut yang disuwir dengan halus</span>
+                                            </div>
+                                            <div class="topping-item">
+                                                <i class="fas fa-check-circle"></i>
+                                                <span><strong>Telur Ceplok</strong> - Telur ceplok
+                                                    setengah matang yang nikmat rasanya</span>
+                                            </div>
+                                            <div class="topping-item">
+                                                <i class="fas fa-check-circle"></i>
+                                                <span><strong>Potongan Sosis Ayam</strong> -
+                                                    Potongan-potongan sosis ayam yang berkualitas
+                                                    premium</span>
+                                            </div>
+                                            <div class="topping-item">
+                                                <i class="fas fa-check-circle"></i>
+                                                <span><strong>Potongan Daging Rendang</strong> - Rendang
+                                                    empuk dengan bumbu meresap</span>
+                                            </div>
+                                            <div class="topping-item">
+                                                <i class="fas fa-check-circle"></i>
+                                                <span><strong>Beef Katsu dengan Keju</strong> - Katsu
+                                                    renyah dengan irisan keju yang lumer di mulut</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex align-items-center justify-content-between flex-wrap">
+                                            <div>
+                                                <span class="price-tag">Rp 10.000</span>
+                                                <p class="text-muted mt-2 mb-0" style="font-size: 0.9rem">
+                                                    <i class="fas fa-info-circle me-1"></i>
+                                                    Harga per porsi dengan 1 pilihan topping
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  <div class="col-md-7">
-                    <div class="menu-card-body">
-                      <h3 class="menu-card-title">Rice Box Nasi Goreng</h3>
-                      <p class="menu-card-desc">
-                        Nasi goreng spesial dengan bumbu pilihan yang gurih dan
-                        lezat. Tersedia dalam porsi nasi box yang praktis dan
-                        mengenyangkan!
-                      </p>
-                      <div class="topping-list">
-                        <h6>
-                          <i class="fas fa-utensils me-2"></i>Pilih Topping
-                          Favorit Anda:
-                        </h6>
-                        <div class="topping-item">
-                          <i class="fas fa-check-circle"></i>
-                          <span
-                            ><strong>Telur Dadar Suwir</strong> - Telur dadar
-                            lembut yang disuwir dengan halus</span
-                          >
-                        </div>
-                        <div class="topping-item">
-                          <i class="fas fa-check-circle"></i>
-                          <span
-                            ><strong>Telur Ceplok</strong> - Telur ceplok
-                            setengah matang yang nikmat rasanya</span
-                          >
-                        </div>
-                        <div class="topping-item">
-                          <i class="fas fa-check-circle"></i>
-                          <span
-                            ><strong>Potongan Sosis Ayam</strong> -
-                            Potongan-potongan sosis ayam yang berkualitas
-                            premium</span
-                          >
-                        </div>
-                        <div class="topping-item">
-                          <i class="fas fa-check-circle"></i>
-                          <span
-                            ><strong>Potongan Daging Rendang</strong> - Rendang
-                            empuk dengan bumbu meresap</span
-                          >
-                        </div>
-                        <div class="topping-item">
-                          <i class="fas fa-check-circle"></i>
-                          <span
-                            ><strong>Beef Katsu dengan Keju</strong> - Katsu
-                            renyah dengan irisan keju yang lumer di mulut</span
-                          >
-                        </div>
-                      </div>
+                </div>
+            </div>
+            <!-- Frozen Foods Category -->
+            <div data-aos="fade-up">
+                <div class="text-center">
+                    <span class="category-badge">
+                        <i class="fas fa-snowflake me-2"></i>
+                        Frozen Foods (Makanan Frozen)
+                    </span>
+                </div>
 
-                      <div
-                        class="d-flex align-items-center justify-content-between flex-wrap"
-                      >
-                        <div>
-                          <span class="price-tag">Rp 10.000</span>
-                          <p
-                            class="text-muted mt-2 mb-0"
-                            style="font-size: 0.9rem"
-                          >
-                            <i class="fas fa-info-circle me-1"></i>
-                            Harga per porsi dengan 1 pilihan topping
-                          </p>
+                <div class="row mt-4">
+                    <!-- Bakso Tahu -->
+                    <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="menu-card">
+                            <div class="menu-card-img">
+                                <i class="fas fa-cookie-bite"></i>
+                            </div>
+                            <div class="menu-card-body">
+                                <h4 class="menu-card-title">Bakso Tahu Frozen</h4>
+                                <p class="menu-card-desc">
+                                    Perpaduan sempurna antara bakso dan tahu yang digoreng
+                                    renyah. Cocok untuk camilan atau pelengkap hidangan utama.
+                                </p>
+                                <div class="mb-3">
+                                    <span class="quality-badge">
+                                        <i class="fas fa-check-circle"></i>
+                                        Awet & Tahan Lama
+                                    </span>
+                                    <span class="quality-badge">
+                                        <i class="fas fa-thumbs-up"></i>
+                                        Teruji Kualitas
+                                    </span>
+                                </div>
+
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <span class="price-tag">Rp 1.500</span>
+                                    <p class="text-muted mb-0" style="font-size: 0.9rem">
+                                        per satuan
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                      </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Frozen Foods Category -->
-        <div data-aos="fade-up">
-          <div class="text-center">
-            <span class="category-badge">
-              <i class="fas fa-snowflake me-2"></i>
-              Frozen Foods (Makanan Frozen)
-            </span>
-          </div>
 
-          <div class="row mt-4">
-            <!-- Bakso Tahu -->
-            <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-              <div class="menu-card">
-                <div class="menu-card-img">
-                  <i class="fas fa-cookie-bite"></i>
-                </div>
-                <div class="menu-card-body">
-                  <h4 class="menu-card-title">Bakso Tahu Frozen</h4>
-                  <p class="menu-card-desc">
-                    Perpaduan sempurna antara bakso dan tahu yang digoreng
-                    renyah. Cocok untuk camilan atau pelengkap hidangan utama.
-                  </p>
-                  <div class="mb-3">
-                    <span class="quality-badge">
-                      <i class="fas fa-check-circle"></i>
-                      Awet & Tahan Lama
-                    </span>
-                    <span class="quality-badge">
-                      <i class="fas fa-thumbs-up"></i>
-                      Teruji Kualitas
-                    </span>
-                  </div>
+                    <!-- Bakso Ayam -->
+                    <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="menu-card">
+                            <div class="menu-card-img" style="background: linear-gradient(135deg, #4ecdc4, #44a08d)">
+                                <i class="fas fa-drumstick-bite"></i>
+                            </div>
+                            <div class="menu-card-body">
+                                <h4 class="menu-card-title">Bakso Ayam Frozen</h4>
+                                <p class="menu-card-desc">
+                                    Bakso ayam premium dengan tekstur kenyal dan rasa yang
+                                    gurih. Praktis untuk berbagai olahan masakan.
+                                </p>
+                                <div class="mb-3">
+                                    <span class="quality-badge">
+                                        <i class="fas fa-check-circle"></i>
+                                        Awet & Tahan Lama
+                                    </span>
+                                    <span class="quality-badge">
+                                        <i class="fas fa-thumbs-up"></i>
+                                        Teruji Kualitas
+                                    </span>
+                                </div>
 
-                  <div
-                    class="d-flex align-items-center justify-content-between"
-                  >
-                    <span class="price-tag">Rp 1.500</span>
-                    <p class="text-muted mb-0" style="font-size: 0.9rem">
-                      per satuan
-                    </p>
-                  </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <span class="price-tag">Rp 20.000</span>
+                                    <p class="text-muted mb-0" style="font-size: 0.9rem">
+                                        per porsi
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
 
-            <!-- Bakso Ayam -->
-            <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-              <div class="menu-card">
-                <div
-                  class="menu-card-img"
-                  style="background: linear-gradient(135deg, #4ecdc4, #44a08d)"
-                >
-                  <i class="fas fa-drumstick-bite"></i>
-                </div>
-                <div class="menu-card-body">
-                  <h4 class="menu-card-title">Bakso Ayam Frozen</h4>
-                  <p class="menu-card-desc">
-                    Bakso ayam premium dengan tekstur kenyal dan rasa yang
-                    gurih. Praktis untuk berbagai olahan masakan.
-                  </p>
-                  <div class="mb-3">
-                    <span class="quality-badge">
-                      <i class="fas fa-check-circle"></i>
-                      Awet & Tahan Lama
-                    </span>
-                    <span class="quality-badge">
-                      <i class="fas fa-thumbs-up"></i>
-                      Teruji Kualitas
-                    </span>
-                  </div>
-
-                  <div
-                    class="d-flex align-items-center justify-content-between"
-                  >
-                    <span class="price-tag">Rp 20.000</span>
-                    <p class="text-muted mb-0" style="font-size: 0.9rem">
-                      per porsi
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Quality Assurance Info -->
-          <div class="row mt-4">
-            <div class="col-12">
-              <div
-                class="alert"
-                style="
+                <!-- Quality Assurance Info -->
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <div class="alert" style="
                   background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
                   border: none;
                   border-radius: 15px;
                   padding: 2rem;
-                "
-                data-aos="fade-up"
-              >
-                <div class="d-flex align-items-center">
-                  <i
-                    class="fas fa-certificate"
-                    style="
+                " data-aos="fade-up">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-certificate" style="
                       font-size: 3rem;
                       color: #2e7d32;
                       margin-right: 1.5rem;
-                    "
-                  ></i>
-                  <div>
-                    <h5
-                      style="
+                    "></i>
+                                <div>
+                                    <h5 style="
                         color: #2e7d32;
                         font-weight: 700;
                         margin-bottom: 0.5rem;
-                      "
-                    >
-                      <i class="fas fa-star me-2"></i>Jaminan Kualitas Frozen
-                      Foods
-                    </h5>
-                    <p
-                      style="
+                      ">
+                                        <i class="fas fa-star me-2"></i>Jaminan Kualitas Frozen
+                                        Foods
+                                    </h5>
+                                    <p style="
                         color: #1b5e20;
                         margin-bottom: 0;
                         font-size: 1.1rem;
-                      "
-                    >
-                      Semua produk frozen foods kami telah melalui uji kualitas
-                      ketat dan terbukti <strong>awet serta tahan lama</strong>.
-                      Disimpan dalam suhu optimal untuk menjaga kesegaran dan
-                      cita rasa.
-                    </p>
-                  </div>
+                      ">
+                                        Semua produk frozen foods kami telah melalui uji kualitas
+                                        ketat dan terbukti <strong>awet serta tahan lama</strong>.
+                                        Disimpan dalam suhu optimal untuk menjaga kesegaran dan
+                                        cita rasa.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
-      <div class="container">
-        <div class="section-heading" data-aos="fade-up">
-          <h2 style="color: white">Hubungi Kami</h2>
-          <p style="color: rgba(255, 255, 255, 0.9)">
-            Pesan sekarang dan nikmati kelezatan produk DARAFA Foods!
-          </p>
+        <div class="container">
+            <div class="section-heading" data-aos="fade-up">
+                <h2 style="color: white">Hubungi Kami</h2>
+                <p style="color: rgba(255, 255, 255, 0.9)">
+                    Pesan sekarang dan nikmati kelezatan produk DARAFA Foods!
+                </p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <a href="https://wa.me/6287868521570" target="_blank">
+                        <div class="contact-card">
+                            <i class="fab fa-whatsapp"></i>
+                            <h4>WhatsApp</h4>
+                            <p>Pesan langsung via WhatsApp</p>
+                            <strong>+6287868521570</strong>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-card">
+                        <i class="fab fa-instagram"></i>
+                        <h4>Instagram</h4>
+                        <p>Follow kami di Instagram</p>
+                        <a href="https://instagram.com/darafafoods" target="_blank">@darafafoods</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="contact-card">
+                        <i class="fab fa-tiktok"></i>
+                        <h4>TikTok</h4>
+                        <p>Lihat postingan video kami di TikTok</p>
+                        <a href="https://tiktok.com/@darafafoods" target="_blank">@darafafoods</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email</h4>
+                        <p>Kirim email kepada kami</p>
+                        <a href="mailto:darafafoods@gmail.com">darafafoods@gmail.com</a>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="row">
-          <div
-            class="col-md-6 col-lg-3 mb-4"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <a href="https://wa.me/6287868521570" target="_blank">
-              <div class="contact-card">
-                <i class="fab fa-whatsapp"></i>
-                <h4>WhatsApp</h4>
-                <p>Pesan langsung via WhatsApp</p>
-                <strong>+6287868521570</strong>
-              </div>
-            </a>
-          </div>
-
-          <div
-            class="col-md-6 col-lg-3 mb-4"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <div class="contact-card">
-              <i class="fab fa-instagram"></i>
-              <h4>Instagram</h4>
-              <p>Follow kami di Instagram</p>
-              <a href="https://instagram.com/darafafoods" target="_blank"
-                >@darafafoods</a
-              >
-            </div>
-          </div>
-
-          <div
-            class="col-md-6 col-lg-3 mb-4"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <div class="contact-card">
-              <i class="fab fa-tiktok"></i>
-              <h4>TikTok</h4>
-              <p>Lihat postingan video kami di TikTok</p>
-              <a href="https://tiktok.com/@darafafoods" target="_blank"
-                >@darafafoods</a
-              >
-            </div>
-          </div>
-
-          <div
-            class="col-md-6 col-lg-3 mb-4"
-            data-aos="fade-up"
-            data-aos-delay="400"
-          >
-            <div class="contact-card">
-              <i class="fas fa-envelope"></i>
-              <h4>Email</h4>
-              <p>Kirim email kepada kami</p>
-              <a href="mailto:darafafoods@gmail.com">darafafoods@gmail.com</a>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
     <footer class="page-footer">
-      <div class="container">
-        <div class="row mb-4 gx-xxl-5">
-          <div class="col-lg-4 mb-4">
-            <img
-              src="assets/img/logo/logo%20DARAFA%20transparent%20crop.png"
-              width="80"
-              height="90"
-              alt="DARAFA Logo"
-              class="mb-3"
-            />
-            <h5 style="color: var(--secondary-color); font-weight: 700">
-              DARAFA Foods
-            </h5>
-            <p style="color: rgb(255, 255, 255); text-align: justify">
-              Menyediakan Rice Box Nasi Goreng dan Frozen Foods (Makanan Frozen)
-              yang berkualitas premium dengan harga yang terjangkau dan ramah di
-              kantong.
-            </p>
-          </div>
-          <div class="col-lg-2 col-md-6 mb-4">
-            <h5
-              style="
+        <div class="container">
+            <div class="row mb-4 gx-xxl-5">
+                <div class="col-lg-4 mb-4">
+                    <img src="assets/img/logo/logo%20DARAFA%20transparent%20crop.png" width="80" height="90"
+                        alt="DARAFA Logo" class="mb-3" />
+                    <h5 style="color: var(--secondary-color); font-weight: 700">
+                        DARAFA Foods
+                    </h5>
+                    <p style="color: rgb(255, 255, 255); text-align: justify">
+                        Menyediakan Rice Box Nasi Goreng dan Frozen Foods (Makanan Frozen)
+                        yang berkualitas premium dengan harga yang terjangkau dan ramah di
+                        kantong.
+                    </p>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 style="
                 font-weight: 700;
                 margin-bottom: 1.5rem;
                 color: var(--secondary-color);
-              "
-            >
-              Navigasi
-            </h5>
-            <ul style="list-style: none; padding: 0">
-              <li style="margin-bottom: 0.8rem">
-                <a
-                  href="#home"
-                  style="color: rgb(255, 255, 255); text-decoration: none"
-                  >Beranda</a
-                >
-              </li>
-              <li style="margin-bottom: 0.8rem">
-                <a
-                  href="#menu"
-                  style="color: rgb(255, 255, 255); text-decoration: none"
-                  >Menu Kami</a
-                >
-              </li>
-              <li style="margin-bottom: 0.8rem">
-                <a
-                  href="#features"
-                  style="color: rgb(255, 255, 255); text-decoration: none"
-                  >Keunggulan</a
-                >
-              </li>
-              <li style="margin-bottom: 0.8rem">
-                <a
-                  href="gallery.html"
-                  style="color: rgb(255, 255, 255); text-decoration: none"
-                  >Galeri</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-4">
-            <h5
-              style="
+              ">
+                        Navigasi
+                    </h5>
+                    <ul style="list-style: none; padding: 0">
+                        <li style="margin-bottom: 0.8rem">
+                            <a href="#home" style="color: rgb(255, 255, 255); text-decoration: none">Beranda</a>
+                        </li>
+                        <li style="margin-bottom: 0.8rem">
+                            <a href="#menu" style="color: rgb(255, 255, 255); text-decoration: none">Menu Kami</a>
+                        </li>
+                        <li style="margin-bottom: 0.8rem">
+                            <a href="#features" style="color: rgb(255, 255, 255); text-decoration: none">Keunggulan</a>
+                        </li>
+                        <li style="margin-bottom: 0.8rem">
+                            <a href="gallery.html" style="color: rgb(255, 255, 255); text-decoration: none">Galeri</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 style="
                 font-weight: 700;
                 margin-bottom: 1.5rem;
                 color: var(--secondary-color);
-              "
-            >
-              Menu Produk Makanan
-            </h5>
-            <ul style="list-style: none; padding: 0">
-              <li style="margin-bottom: 0.8rem">
-                <a
-                  href="#menu"
-                  style="color: rgb(255, 255, 255); text-decoration: none"
-                  >Rice Box Nasi Goreng</a
-                >
-              </li>
-              <li style="margin-bottom: 0.8rem">
-                <a
-                  href="#menu"
-                  style="color: rgb(255, 255, 255); text-decoration: none"
-                  >Bakso Tahu Frozen</a
-                >
-              </li>
-              <li style="margin-bottom: 0.8rem">
-                <a
-                  href="#menu"
-                  style="color: rgb(255, 255, 255); text-decoration: none"
-                  >Bakso Ayam Frozen</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-4">
-            <h5
-              style="
+              ">
+                        Menu Produk Makanan
+                    </h5>
+                    <ul style="list-style: none; padding: 0">
+                        <li style="margin-bottom: 0.8rem">
+                            <a href="#menu" style="color: rgb(255, 255, 255); text-decoration: none">Rice Box Nasi
+                                Goreng</a>
+                        </li>
+                        <li style="margin-bottom: 0.8rem">
+                            <a href="#menu" style="color: rgb(255, 255, 255); text-decoration: none">Bakso Tahu
+                                Frozen</a>
+                        </li>
+                        <li style="margin-bottom: 0.8rem">
+                            <a href="#menu" style="color: rgb(255, 255, 255); text-decoration: none">Bakso Ayam
+                                Frozen</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 style="
                 font-weight: 700;
                 margin-bottom: 1.5rem;
                 color: var(--secondary-color);
-              "
-            >
-              Jam Operasional
-            </h5>
-            <p
-              style="
+              ">
+                        Jam Operasional
+                    </h5>
+                    <p style="
                 color: var(--secondary-color);
                 margin-bottom: 0.5rem;
                 font-weight: 700;
-              "
-            >
-              <i
-                class="fas fa-clock me-2"
-                style="color: var(--secondary-color)"
-              ></i>
-              Senin - Minggu
-            </p>
-            <p style="color: var(--dark-color)">08:00 - 20:00 WIB</p>
-          </div>
-        </div>
-        <hr style="border-color: rgba(255, 255, 255, 0.4); margin: 2rem 0" />
-        <div class="row align-items-center">
-          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-            <p style="margin: 0; color: rgb(255, 255, 255); font-weight: 500">
-              © 2025 DARAFA Foods. All Rights Reserved.
-            </p>
-          </div>
-          <div class="col-md-6">
-            <div class="footer-social text-center text-md-end">
-              <a
-                href="https://wa.me/6287868521570"
-                target="_blank"
-                title="WhatsApp"
-              >
-                <i class="fab fa-whatsapp"></i>
-              </a>
-              <a
-                href="https://instagram.com/darafafoods"
-                target="_blank"
-                title="Instagram"
-              >
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a
-                href="https://tiktok.com/@darafafoods"
-                target="_blank"
-                title="TikTok"
-              >
-                <i class="fab fa-tiktok"></i>
-              </a>
-              <a href="mailto:darafafoods@gmail.com" title="Email">
-                <i class="fas fa-envelope"></i>
-              </a>
+              ">
+                        <i class="fas fa-clock me-2" style="color: var(--secondary-color)"></i>
+                        Senin - Minggu
+                    </p>
+                    <p style="color: var(--dark-color)">08:00 - 20:00 WIB</p>
+                </div>
             </div>
-          </div>
+            <hr style="border-color: rgba(255, 255, 255, 0.4); margin: 2rem 0" />
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p style="margin: 0; color: rgb(255, 255, 255); font-weight: 500">
+                        © 2025 DARAFA Foods. All Rights Reserved.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <div class="footer-social text-center text-md-end">
+                        <a href="https://wa.me/6287868521570" target="_blank" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://instagram.com/darafafoods" target="_blank" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://tiktok.com/@darafafoods" target="_blank" title="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="mailto:darafafoods@gmail.com" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </footer>
-    <a
-      href="https://wa.me/6287868521570"
-      class="d-none d-lg-flex whatsapp-float"
-      target="_blank"
-      title="Chat via WhatsApp"
-    >
-      <i class="fab fa-whatsapp"></i>
+    <a href="https://wa.me/6287868521570" class="d-none d-lg-flex whatsapp-float" target="_blank"
+        title="Chat via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
     </a>
-    <a
-      href="https://wa.me/c/6287868521570"
-      class="d-lg-none whatsapp-float"
-      target="_blank"
-      title="Chat via WhatsApp"
-    >
-      <i class="fab fa-whatsapp"></i>
+    <a href="https://wa.me/c/6287868521570" class="d-lg-none whatsapp-float" target="_blank" title="Chat via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
     </a>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/aos.min.js"></script>
@@ -647,5 +477,6 @@
     <script src="assets/js/vanilla-zoom.js"></script>
     <script src="assets/js/theme.js"></script>
     <script src="assets/js/landing-page.js"></script>
-  </body>
+</body>
+
 </html>

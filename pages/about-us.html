@@ -6,27 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>About Us - DARAFA</title>
     <meta name="description" content="DARAFA Official Website">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/icons/darafa%2032x32%20transparent.png">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i&amp;display=swap">
-    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
-    <link rel="stylesheet" href="assets/css/baguetteBox.min.css">
-    <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/icons/darafa%2032x32%20transparent.png">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i&amp;display=swap" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" />
+    <link rel="stylesheet" href="../assets/fonts/simple-line-icons.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="../assets/css/aos.min.css" />
+    <link rel="stylesheet" href="../assets/css/baguetteBox.min.css" />
+    <link rel="stylesheet" href="../assets/css/vanilla-zoom.min.css" />
+    <link rel="stylesheet" href="../assets/css/landing-page-styles.css" />
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top bg-body clean-navbar navbar-light">
-        <div class="container"><img src="assets/img/logo/logo%20DARAFA%20transparent%20crop.png" width="76" height="85"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">BERANDA</a></li>
-                    <li class="nav-item"><a class="nav-link" href="service-page.html">LAYANAN DARAFA</a></li>
-                    <li class="nav-item"><a class="nav-link" href="gallery.html">GALERI</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="about-us.html">TENTANG KAMI</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div id="navbar-container"></div>
+    <script src="..\assets\js\navbar.js"></script>
+    <script>
+        // panggil fungsi untuk load navbar
+        document.addEventListener("DOMContentLoaded", () => {
+            loadNavbar();
+        });
+    </script>
     <main class="page">
         <section class="clean-block about-us">
             <div class="container">
@@ -36,7 +38,7 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-sm-6 col-lg-4">
-                        <div class="card text-center clean-card"><img class="card-img-top w-100 d-block" src="assets/img/avatars/avatar1.jpg">
+                        <div class="card text-center clean-card"><img class="card-img-top w-100 d-block" src="../assets/img/avatars/avatar1.jpg">
                             <div class="card-body info">
                                 <h4 class="card-title">John Smith</h4>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -45,7 +47,7 @@
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-4">
-                        <div class="card text-center clean-card"><img class="card-img-top w-100 d-block" src="assets/img/avatars/avatar2.jpg">
+                        <div class="card text-center clean-card"><img class="card-img-top w-100 d-block" src="../assets/img/avatars/avatar2.jpg">
                             <div class="card-body info">
                                 <h4 class="card-title">Robert Downturn</h4>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -54,7 +56,7 @@
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-4">
-                        <div class="card text-center clean-card"><img class="card-img-top w-100 d-block" src="assets/img/avatars/avatar3.jpg">
+                        <div class="card text-center clean-card"><img class="card-img-top w-100 d-block" src="../assets/img/avatars/avatar3.jpg">
                             <div class="card-body info">
                                 <h4 class="card-title">Ally Sanders</h4>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -110,11 +112,13 @@
             <p>© 2025 DARAFA</p>
         </div>
     </footer>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
-    <script src="assets/js/baguetteBox.min.js"></script>
-    <script src="assets/js/vanilla-zoom.js"></script>
-    <script src="assets/js/theme.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/aos.min.js"></script>
+    <script src="../assets/js/bs-init.js"></script>
+    <script src="../assets/js/baguetteBox.min.js"></script>
+    <script src="../assets/js/vanilla-zoom.js"></script>
+    <script src="../assets/js/theme.js"></script>
+    <script src="../assets/js/landing-page.js"></script>
 </body>
 
 </html>
