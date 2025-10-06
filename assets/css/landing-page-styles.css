@@ -24,6 +24,19 @@ a:focus {
   text-decoration: none;
 }
 
+/* Carousel */
+.carousel-inner img {
+  width: 400px;
+  height: 566px;
+  object-fit: cover; /* atau 'contain' sesuai kebutuhan */
+  margin: 0 auto;     /* supaya gambar tetap center */
+}
+
+.carousel-indicators {
+  top: auto;      /* posisi dari atas */
+  bottom: -40px;   /* hapus posisi bawah */
+}
+
 /* Navigation Styling */
 .clean-navbar {
   background: rgba(255, 255, 255, 0.98) !important;
