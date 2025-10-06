@@ -697,11 +697,15 @@ div.footer-div ul li a:hover {
 }
 
 .page-footer ul li a:visited {
-  color: white;
+  color: white !important;
 }
 
 .page-footer ul li a:hover {
   color: var(--secondary-color) !important;
+}
+
+ul.menu-produk-makanan-ul li a:visited {
+  color: white !important;
 }
 
 /* Responsive */
