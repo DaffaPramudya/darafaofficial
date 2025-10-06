@@ -32,6 +32,15 @@ a:focus {
   margin: 0 auto;     /* supaya gambar tetap center */
 }
 
+/* Untuk layar mobile */
+@media (max-width: 767.98px) {
+  .carousel-inner img {
+    width: 250px;      /* perkecil lebar untuk mobile */
+    height: 350px;     /* perkecil tinggi untuk mobile */
+    object-fit: cover; /* tetap menjaga proporsi */
+  }
+}
+
 .carousel-indicators {
   top: 10px;      /* posisi dari atas */
   bottom: auto;   /* hapus posisi bawah */
@@ -122,6 +131,22 @@ a:focus {
   font-size: 1.3rem;
   margin-bottom: 2rem;
   opacity: 0.95;
+  text-align: justify;
+  /* text-justify: inter-word; opsional, agar distribusi spasi lebih merata */
+}
+
+@media (max-width: 768px) {
+  .hero-content p {
+    font-size: 0.9rem;        /* lebih kecil di layar mobile */
+    margin-bottom: 1.5rem;  /* sedikit lebih rapat */
+  }
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center; /* rata tengah horizontal */
+  gap: 15px;               /* jarak antar tombol */
+  flex-wrap: wrap;         /* biar tidak overflow di layar kecil */
 }
 
 .hero-buttons .btn {
@@ -138,8 +163,8 @@ a:focus {
 /* Khusus untuk mobile (layar < 768px) */
 @media (max-width: 767.98px) {
   .hero-buttons .btn {
-    padding: 10px 25px;     /* lebih kecil agar pas di layar kecil */
-    font-size: 0.9rem;      /* sedikit lebih kecil */
+    padding: 5px 15px;     /* lebih kecil agar pas di layar kecil */
+    font-size: 0.8rem;      /* sedikit lebih kecil */
     margin: 6px;            /* lebih rapat */
     border-radius: 40px;    /* bisa tetap bulat tapi sedikit kecil */
   }
@@ -482,10 +507,6 @@ a:focus {
 @media (max-width: 768px) {
   .hero-content h1 {
     font-size: 2.5rem;
-  }
-
-  .hero-content p {
-    font-size: 1.1rem;
   }
 
   .section-heading h2 {
