@@ -9,6 +9,16 @@ function normalizePath(path) {
 }
 
 function initNavbarIndicator() {
+  console.log("== DEBUG NAVBAR ==");
+  console.log("location.pathname:", window.location.pathname);
+  console.log("location.hash:", window.location.hash);
+
+  document.querySelectorAll("#navMenu .nav-link").forEach(link => {
+    const url = new URL(link.getAttribute("href"), window.location.origin);
+    console.log("link:", link.textContent.trim(),
+      "->", url.pathname, url.hash);
+  });
+
   const links = document.querySelectorAll("#navMenu .nav-link");
   const indicator = document.querySelector(".nav-indicator");
 
