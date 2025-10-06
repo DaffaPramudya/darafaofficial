@@ -32,9 +32,23 @@ a:focus {
   margin: 0 auto;     /* supaya gambar tetap center */
 }
 
+/* Khusus untuk layar mobile */
+@media (max-width: 767.98px) {
+  .carousel-inner {
+    padding: 10px 0;   /* jarak atas/bawah */
+  }
+
+  /* Jika ingin ada jarak samping juga */
+  .carousel-inner img {
+    max-width: 100%;
+    padding: 0 0px;   /* jarak kiri kanan gambar */
+    box-sizing: border-box;
+  }
+}
+
 .carousel-indicators {
-  top: auto;      /* posisi dari atas */
-  bottom: -40px;   /* hapus posisi bawah */
+  top: 10px;      /* posisi dari atas */
+  bottom: auto;   /* hapus posisi bawah */
 }
 
 /* Navigation Styling */
@@ -86,6 +100,13 @@ a:focus {
   padding-top: 80px;
 }
 
+/* Khusus untuk mobile (layar kecil) */
+@media (max-width: 1067.98px) {
+  .hero-section {
+    padding-top: 150px; /* lebih besar agar tidak tertutup navbar */
+  }
+}
+
 .hero-section::before {
   content: "";
   position: absolute;
@@ -126,6 +147,16 @@ a:focus {
   transition: all 0.3s ease;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+/* Khusus untuk mobile (layar < 768px) */
+@media (max-width: 767.98px) {
+  .hero-buttons .btn {
+    padding: 10px 25px;     /* lebih kecil agar pas di layar kecil */
+    font-size: 0.9rem;      /* sedikit lebih kecil */
+    margin: 6px;            /* lebih rapat */
+    border-radius: 40px;    /* bisa tetap bulat tapi sedikit kecil */
+  }
 }
 
 .btn-primary-custom {
