@@ -32,20 +32,6 @@ a:focus {
   margin: 0 auto;     /* supaya gambar tetap center */
 }
 
-/* Khusus untuk layar mobile */
-@media (max-width: 767.98px) {
-  .carousel-inner {
-    padding: 10px 0;   /* jarak atas/bawah */
-  }
-
-  /* Jika ingin ada jarak samping juga */
-  .carousel-inner img {
-    max-width: 100%;
-    padding: 0 0px;   /* jarak kiri kanan gambar */
-    box-sizing: border-box;
-  }
-}
-
 .carousel-indicators {
   top: 10px;      /* posisi dari atas */
   bottom: auto;   /* hapus posisi bawah */
