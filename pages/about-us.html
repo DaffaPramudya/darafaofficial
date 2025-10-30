@@ -1,108 +1,531 @@
 <!DOCTYPE html>
 <html data-bs-theme="light" lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>About Us - DARAFA</title>
-    <meta name="description" content="DARAFA Official Website">
-    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/icons/darafa%2032x32%20transparent.png">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Tentang Kami (About Us) - DARAFA Foods</title>
+    <meta
+      name="description"
+      content="Kenali Tim DARAFA Foods - Orang-orang di balik kelezatan produk kami"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/img/icons/darafa%2032x32%20transparent.png"
+    />
     <link rel="stylesheet" href="/assets/css/all.css" />
-</head>
+    <link rel="stylesheet" href="/assets/css/about-us.css" />
+  </head>
 
-<body>
+  <body>
     <div id="navbar-container"></div>
     <script src="..\assets\js\navbar.js"></script>
     <script>
-        // panggil fungsi untuk load navbar
-        document.addEventListener("DOMContentLoaded", () => {
-            loadNavbar();
-        });
+      // panggil fungsi untuk load navbar
+      document.addEventListener("DOMContentLoaded", () => {
+        loadNavbar();
+      });
     </script>
-    <main class="page">
-        <section class="clean-block about-us">
-            <div class="container">
-                <div class="block-heading">
-                    <h2 class="text-info">About Us</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="card text-center clean-card"><img class="card-img-top w-100 d-block" src="../assets/img/avatars/avatar1.jpg">
-                            <div class="card-body info">
-                                <h4 class="card-title">John Smith</h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <div class="icons"><a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i class="icon-social-instagram"></i></a><a href="#"><i class="icon-social-twitter"></i></a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="card text-center clean-card"><img class="card-img-top w-100 d-block" src="../assets/img/avatars/avatar2.jpg">
-                            <div class="card-body info">
-                                <h4 class="card-title">Robert Downturn</h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <div class="icons"><a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i class="icon-social-instagram"></i></a><a href="#"><i class="icon-social-twitter"></i></a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="card text-center clean-card"><img class="card-img-top w-100 d-block" src="../assets/img/avatars/avatar3.jpg">
-                            <div class="card-body info">
-                                <h4 class="card-title">Ally Sanders</h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <div class="icons"><a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i class="icon-social-instagram"></i></a><a href="#"><i class="icon-social-twitter"></i></a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="page-footer dark">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3">
-                    <h5>Get started</h5>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Sign up</a></li>
-                        <li><a href="#">Downloads</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <h5>About us</h5>
-                    <ul>
-                        <li><a href="#">Company Information</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">Reviews</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <h5>Support</h5>
-                    <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Help desk</a></li>
-                        <li><a href="#">Forums</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <h5>Legal</h5>
-                    <ul>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Terms of Use</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
-                </div>
-            </div>
+    <!-- Page Header -->
+    <section class="about-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center" data-aos="fade-down">
+            <h1>Tentang Kami</h1>
+            <p class="lead">
+              Kenali tim di balik kelezatan produk <b>DARAFA Foods</b>
+            </p>
+          </div>
         </div>
-        <div class="footer-copyright">
-            <div class="clean-block add-on social-icons">
-                <div class="icons"><a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i class="icon-social-instagram"></i></a><a href="#"><i class="icon-social-twitter"></i></a></div>
-            </div>
-            <p>© 2025 DARAFA</p>
-        </div>
-    </footer>
-    <script src="/assets/js/all.js"></script>
-</body>
+      </div>
+    </section>
 
+    <!-- Mission & Vision Section -->
+    <section class="mission-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+            <div class="mission-card">
+              <div class="mission-icon">
+                <i class="fas fa-bullseye"></i>
+              </div>
+              <h3>Misi Kami</h3>
+              <p>
+                Menyediakan produk makanan yang berkualitas premium dengan harga yang cukup
+                terjangkau untuk semua kalangan masyarakat. Kami berkomitmen untuk
+                menghadirkan cita rasa yang terbaik dalam setiap sajian.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="mission-card">
+              <div class="mission-icon">
+                <i class="fas fa-eye"></i>
+              </div>
+              <h3>Visi Kami</h3>
+              <p>
+                Menjadi brand makanan terpercaya yang dikenal dengan kualitas,
+                kebersihan, dan pelayanan terbaik di Indonesia. Kami ingin hadir
+                di setiap momen spesial keluarga Indonesia.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <h2>Anggota-Anggota Tim Kami</h2>
+          <p>
+            Orang-orang hebat yang berdedikasi untuk terus menghadirkan produk
+            yang berkualitas terbaik untuk Anda.
+          </p>
+        </div>
+
+        <div class="row justify-content-center">
+          <!-- Team Member 1 -->
+          <div
+            class="col-lg-3 col-md-6 mb-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="team-card">
+              <div class="team-image-wrapper">
+                <img
+                  src="../assets/img/team/member1.jpg"
+                  alt="Nama Member 1"
+                  class="team-image"
+                  onerror="this.src='https://via.placeholder.com/400x500/FF6B35/FFFFFF?text=Member+1'"
+                />
+                <div class="team-overlay">
+                  <div class="social-links">
+                    <a
+                      href="https://wa.me/628123456789"
+                      target="_blank"
+                      title="WhatsApp"
+                    >
+                      <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a
+                      href="https://instagram.com/member1"
+                      target="_blank"
+                      title="Instagram"
+                    >
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="mailto:member1@darafafoods.com" title="Email">
+                      <i class="fas fa-envelope"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="team-info">
+                <h4 class="team-name">Daffa Pramudya Ismanto</h4>
+                <p class="team-role">Founder & CEO</p>
+                <p class="team-description">
+                  Visioner di balik <b>DARAFA Foods</b> yang memastikan setiap produk
+                  memenuhi standar kualitas tertinggi.
+                </p>
+                <a href="tel:+628123456789" class="team-phone">
+                  <i class="fas fa-phone-alt"></i> +62 812-3456-789
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team Member 2 -->
+          <div
+            class="col-lg-3 col-md-6 mb-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="team-card">
+              <div class="team-image-wrapper">
+                <img
+                  src="../assets/img/team/member2.jpg"
+                  alt="Nama Member 2"
+                  class="team-image"
+                  onerror="this.src='https://via.placeholder.com/400x500/F7931E/FFFFFF?text=Member+2'"
+                />
+                <div class="team-overlay">
+                  <div class="social-links">
+                    <a
+                      href="https://wa.me/628123456790"
+                      target="_blank"
+                      title="WhatsApp"
+                    >
+                      <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a
+                      href="https://instagram.com/member2"
+                      target="_blank"
+                      title="Instagram"
+                    >
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="mailto:member2@darafafoods.com" title="Email">
+                      <i class="fas fa-envelope"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="team-info">
+                <h4 class="team-name">Muhammad Akhsan Araya Choirunnas</h4>
+                <p class="team-role">Head Chef & Product Developer</p>
+                <p class="team-description">
+                  Ahli kuliner yang menciptakan resep-resep lezat dan inovatif
+                  untuk menu kami.
+                </p>
+                <a href="tel:+628123456790" class="team-phone">
+                  <i class="fas fa-phone-alt"></i> +62 812-3456-790
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team Member 3 -->
+          <div
+            class="col-lg-3 col-md-6 mb-4"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="team-card">
+              <div class="team-image-wrapper">
+                <img
+                  src="../assets/img/team/member3.jpg"
+                  alt="Nama Member 3"
+                  class="team-image"
+                  onerror="this.src='https://via.placeholder.com/400x500/4ECDC4/FFFFFF?text=Member+3'"
+                />
+                <div class="team-overlay">
+                  <div class="social-links">
+                    <a
+                      href="https://wa.me/628123456791"
+                      target="_blank"
+                      title="WhatsApp"
+                    >
+                      <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a
+                      href="https://instagram.com/member3"
+                      target="_blank"
+                      title="Instagram"
+                    >
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="mailto:member3@darafafoods.com" title="Email">
+                      <i class="fas fa-envelope"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="team-info">
+                <h4 class="team-name">Dandy Arya Akbar</h4>
+                <p class="team-role">Operations Manager</p>
+                <p class="team-description">
+                  Memastikan operasional berjalan lancar dan produk sampai ke
+                  pelanggan dengan sempurna.
+                </p>
+                <a href="tel:+628123456791" class="team-phone">
+                  <i class="fas fa-phone-alt"></i> +62 812-3456-791
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team Member 4 -->
+          <div
+            class="col-lg-3 col-md-6 mb-4"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="team-card">
+              <div class="team-image-wrapper">
+                <img
+                  src="../assets/img/team/member4.jpg"
+                  alt="Nama Member 4"
+                  class="team-image"
+                  onerror="this.src='https://via.placeholder.com/400x500/2C3E50/FFFFFF?text=Member+4'"
+                />
+                <div class="team-overlay">
+                  <div class="social-links">
+                    <a
+                      href="https://wa.me/628123456792"
+                      target="_blank"
+                      title="WhatsApp"
+                    >
+                      <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a
+                      href="https://instagram.com/member4"
+                      target="_blank"
+                      title="Instagram"
+                    >
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="mailto:member4@darafafoods.com" title="Email">
+                      <i class="fas fa-envelope"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="team-info">
+                <h4 class="team-name">Andra Achmaddinata</h4>
+                <p class="team-role">Marketing & Social Media</p>
+                <p class="team-description">
+                  Kreatif dalam strategi pemasaran dan mengelola kehadiran
+                  online <b>DARAFA Foods</b>.
+                </p>
+                <a href="tel:+628123456792" class="team-phone">
+                  <i class="fas fa-phone-alt"></i> +62 812-3456-792
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <h2>Nilai-Nilai Kami</h2>
+          <p>Prinsip yang kami pegang dalam setiap langkah</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="value-card">
+              <div class="value-icon">
+                <i class="fas fa-heart"></i>
+              </div>
+              <h4>Kualitas Terbaik</h4>
+              <p>
+                Kami tidak pernah berkompromi dengan kualitas. Setiap bahan
+                dipilih dengan cermat untuk menghasilkan produk terbaik.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="value-card">
+              <div class="value-icon">
+                <i class="fas fa-handshake"></i>
+              </div>
+              <h4>Kepercayaan Pelanggan</h4>
+              <p>
+                Kepuasan dan kepercayaan pelanggan adalah prioritas utama kami
+                dalam setiap transaksi.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="value-card">
+              <div class="value-icon">
+                <i class="fas fa-leaf"></i>
+              </div>
+              <h4>Kebersihan & Kesehatan</h4>
+              <p>
+                Standar kebersihan dan kesehatan yang tinggi dalam setiap proses
+                produksi kami.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center" data-aos="zoom-in">
+            <h2>Apakah Anda Siap Untuk Mencoba Produk Kami?</h2>
+            <p>
+              Bergabunglah dengan ribuan pelanggan yang telah mempercayai
+              <b>DARAFA Foods</b>
+              untuk kebutuhan kuliner mereka!!!
+            </p>
+            <div class="cta-buttons">
+              <a href="/#menu" class="btn btn-primary-custom">
+                <i class="fas fa-utensils me-2"></i>Lihat Menu
+              </a>
+              <a
+                href="https://wa.me/6287868521570"
+                class="btn btn-outline-custom"
+                target="_blank"
+              >
+                <i class="fab fa-whatsapp me-2"></i>Hubungi Kami
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row mb-4 gx-xxl-5">
+          <div class="col-lg-4 mb-4">
+            <img
+              src="../assets/img/logo/darafa%20foods%20500x232.webp"
+              width="150"
+              height="70"
+              alt="DARAFA Logo"
+              class="mb-3"
+            />
+            <h5 style="color: var(--secondary-color); font-weight: 700">
+              <b>DARAFA Foods</b>
+            </h5>
+            <p style="color: rgb(255, 255, 255); text-align: justify">
+              Menyediakan Rice Box Nasi Goreng (Fried Rice Rice Box) dan Frozen
+              Foods (Makanan Frozen) yang berkualitas premium dengan harga yang
+              terjangkau dan ramah di kantong para kalangan masyarakat.
+            </p>
+          </div>
+          <div class="footer-div col-lg-2 col-md-6 mb-4">
+            <h5
+              style="
+                font-weight: 700;
+                margin-bottom: 1.5rem;
+                color: var(--secondary-color);
+              "
+            >
+              Navigasi Website
+            </h5>
+            <ul style="list-style: none; padding: 0">
+              <li style="margin-bottom: 0.8rem">
+                <a href="#home">Beranda</a>
+              </li>
+              <li style="margin-bottom: 0.8rem">
+                <a href="#menu">Menu Produk Makanan Kami</a>
+              </li>
+              <li style="margin-bottom: 0.8rem">
+                <a href="#features">Keunggulan</a>
+              </li>
+              <li style="margin-bottom: 0.8rem">
+                <a href="/pages/about-us.html">Tentang Kami</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-div col-lg-3 col-md-6 mb-4">
+            <h5
+              style="
+                font-weight: 700;
+                margin-bottom: 1.5rem;
+                color: var(--secondary-color);
+              "
+            >
+              Menu Produk Makanan
+            </h5>
+            <ul
+              class="menu-produk-makanan-ul"
+              style="list-style: none; padding: 0"
+            >
+              <li style="margin-bottom: 0.8rem">
+                <a href="#rice-box-section">Rice Box Nasi Goreng</a>
+              </li>
+              <li style="margin-bottom: 0.8rem">
+                <a href="#bakso-tahu-section">Bakso Tahu Frozen</a>
+              </li>
+              <li style="margin-bottom: 0.8rem">
+                <a href="#bakso-ayam-section">Bakso Ayam Frozen</a>
+              </li>
+              <li style="margin-bottom: 0.8rem">
+                <a href="#pempek-section">Pempek Frozen</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5
+              style="
+                font-weight: 700;
+                margin-bottom: 1.5rem;
+                color: var(--secondary-color);
+              "
+            >
+              Jam/Waktu Operasional
+            </h5>
+            <p
+              style="
+                color: var(--secondary-color);
+                margin-bottom: 0.5rem;
+                font-weight: 700;
+              "
+            >
+              <i
+                class="fas fa-clock me-2"
+                style="color: var(--secondary-color)"
+              ></i>
+              Hari Senin – Minggu, <br />Jam 04:00 - 23:59 WIB
+            </p>
+            <p style="color: var(--dark-color)">08:00 - 20:00 WIB</p>
+          </div>
+        </div>
+        <hr style="border-color: rgba(255, 255, 255, 0.4); margin: 2rem 0" />
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            <p style="margin: 0; color: rgb(255, 255, 255); font-weight: 700">
+              © 2025 DARAFA Foods. All Rights Reserved.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <div class="footer-social text-center text-md-end">
+              <a
+                href="https://wa.me/6287868521570"
+                target="_blank"
+                title="WhatsApp"
+              >
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a
+                href="https://instagram.com/darafafoods"
+                target="_blank"
+                title="Instagram"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://tiktok.com/@darafafoods"
+                target="_blank"
+                title="TikTok"
+              >
+                <i class="fab fa-tiktok"></i>
+              </a>
+              <a href="mailto:darafafoods@gmail.com" title="Email">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Arahkan langsung ke chat untuk desktop -->
+    <a
+      href="https://wa.me/6287868521570"
+      class="d-none d-lg-flex whatsapp-float"
+      target="_blank"
+      title="Chat via WhatsApp"
+    >
+      <i class="fab fa-whatsapp"></i>
+      <!-- Arahkan ke katalog untuk mobile -->
+    </a>
+    <a
+      href="https://wa.me/c/6287868521570"
+      class="d-lg-none whatsapp-float"
+      target="_blank"
+      title="Chat via WhatsApp"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <script src="/assets/js/all.js"></script>
+  </body>
 </html>
